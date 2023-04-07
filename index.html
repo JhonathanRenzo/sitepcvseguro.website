@@ -1,444 +1,290 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Guia Receitas Keto Express</title>
-	<style>
-		
-		<script>
-
-   let prefix = ["https://app.monetizze.com.br"];
-
- 
-
-function getParams() {
-
-    let t = "",
-
-        e = window.top.location.href,
-
-        r = new URL(e);
-
-    if (null != r) {
-
-        let a = r.searchParams.get("utm_source"),
-
-            n = r.searchParams.get("utm_medium"),
-
-            o = r.searchParams.get("utm_campaign"),
-
-            m = r.searchParams.get("utm_term"),
-
-            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
-
+  <title>Website</title>
+  <meta charset="UTF-8">
+  <style>
+    .header {
+      background-color: #1E90FF;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      height: 100px;
     }
-
-    return t
-
-}! function() {
-
-    var t = new URLSearchParams(window.location.search);
-
-    t.toString() && document.querySelectorAll("a").forEach(function(e) {
-
-        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
-
-    })
-
-}(); </script>
-
-		.center {
-  text-align: center;
-}
-
-.testimonials {
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-			body {
-		font-family: Arial, sans-serif;
-		background-color: #f2f2f2;
-	}
-
-	.header {
-		background-color: #3d3d3d;
-		color: #fff;
-		padding: 20px;
-		text-align: center;
-		font-size: 36px;
-		margin-bottom: 50px;
-	}
-
-	.section {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		padding: 50px;
-		background-color: #fff;
-		margin-bottom: 50px;
-	}
-
-	.section__image {
-		flex: 1;
-		margin-right: 50px;
-	}
-
-	.section__image img {
-		max-width: 100%;
-		height: auto;
-	}
-
-	.section__content {
-		flex: 1;
-	}
-
-	.section__title {
-		font-size: 24px;
-		margin-bottom: 20px;
-	}
-
-	.section__subtitle {
-		font-size: 18px;
-		margin-bottom: 20px;
-	}
-
-	.section__list {
-		margin-bottom: 20px;
-	}
-
-	.section__list li {
-		font-size: 16px;
-		margin-bottom: 10px;
-		list-style-type: circle;
-		list-style-position: inside;
-	}
-
-	.section__button {
-		background-color: #ff8c00;
-		color: #fff;
-		padding: 10px 20px;
-		border: none;
-		border-radius: 5px;
-		font-size: 18px;
-		cursor: pointer;
-		transition: all 0.3s ease;
-	}
-
-	.section__button:hover {
-		background-color: #ff6700;
-	}
-
-	.testimonials-section {
-  background-color: #f5f5f5;
-  text-align: center;
-  padding: 50px 0;
-}
-
-.testimonials-section__title {
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-
-.testimonial__image img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.testimonial__content {
-  margin-top: 20px;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-	}
-
-	.footer {
-		background-color: #3d3d3d;
-		color: #fff;
-		padding: 20px;
-		text-align: center;
-		font-size: 16px;
-	}
-
-	.guarantee {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px auto;
-  max-width: 800px;
-  text-align: center;
-}
-
-.guarantee__icon {
-  background-color: #f8c333;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  margin-bottom: 30px;
-}
-
-.guarantee__icon i {
-  color: #fff;
-  font-size: 50px;
-}
-
-.guarantee__title {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.guarantee__subtitle {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-.guarantee__button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 18px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.guarantee__button:hover {
-  background-color: #f8c333;
-  color: #333;
-}
-
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-  margin-top: 30px;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.cta-container {
-  margin: 50px auto;
-  text-align: center;
-}
-
-.cta-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.cta-button {
-  background-color: #f6a623;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  border-radius: 50px;
-  padding: 15px 30px;
-  cursor: pointer;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  animation: pulse 1s ease-in-out infinite;
-}
-
-.cta-button:hover {
-  background-color: #f7941e;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-</style>
+    .header p {
+      margin: 0;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      var msg = "ATENÇÃO: Esse vídeo pode sair do ar a qualquer momento!";
+      document.getElementById("geolocation-msg").innerHTML = msg;
+    };
+  </script>
 </head>
 <body>
-	<header class="header">
-		<h1>Guia Receitas Keto Express</h1>
-		<h2>Transforme sua alimentação e sua saúde com deliciosas receitas low-carb!</h2>
-	</header>
-	<div class="video-section">
-  
-  <h2>Assista ao Vídeo de demonstração</h2>
-  
-  <script src="https://fast.wistia.com/embed/medias/s4c4kgr798.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_s4c4kgr798 videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/s4c4kgr798/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
-<a class="buy-button" href="https://app.monetizze.com.br/checkout/DVE210687">Adquirir receitas keto por apenas R$19,90</a>
-
-</div>
-
-<style>
-  .video-section {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .video-wrapper {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-    padding-bottom: 56.25%; /* proporcional à altura do vídeo */
-    height: 0;
-  }
-
-  .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .buy-button {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 30px;
-    background-color: #ff6347;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    margin-top: 20px;
-    cursor: pointer;
-    animation: pulse 2s infinite;
-  }
-
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-</style>
-
-	<main>
-	<section class="section">
-		<div class="section__image">
-			<img src="https://rumorfix.com/wp-content/uploads/2020/09/Keto-breakfast-1024x678.jpg?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8a2V0byUyMHBsYXllcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Imagem de uma refeição keto">
-</div>
-<div class="section__content">
-<h3 class="section__title">Descubra as melhores receitas low-carb</h3>
-<p class="section__subtitle">Se você está buscando uma forma saudável e eficiente de emagrecer e manter uma dieta equilibrada, as receitas keto são a escolha perfeita!</p>
-<ul class="section__list">
-<li>Refeições saborosas e saudáveis;</li>
-<li>Emagreça com saúde e sem passar fome;</li>
-<li>Aumente sua energia e disposição;</li>
-<li>Melhore sua saúde de forma geral.</li>
-</ul>
-<p>Agora, você pode ter acesso às melhores receitas keto em um único lugar. Nosso ebook de receitas é completo, com opções para todas as refeições do dia e para todas as ocasiões.</p>
-<p>Você não precisa mais se preocupar em montar um cardápio saudável e saboroso para a semana. Com o nosso ebook, tudo o que você precisa fazer é escolher suas receitas favoritas e se deliciar!</p>
-<a class="buy-button" href="https://app.monetizze.com.br/checkout/DVE210687">Adquirir receitas keto por apenas R$19,90</a>
-
-</div>
-</section>
-	<section class="section">
-		<div class="section__image">
-			<img src="https://www.southgatecrossing.com/wp-content/uploads/2018/02/Gallery2-1.jpg?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z29vZ2xlJTIwY29sb3JmdWwlMjBhbmQlMjB1cGRhdGUlMjBkZXBvdHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Imagem de uma pessoa cozinhando">
-		</div>
-		<div class="section__content">
-			<h3 class="section__title">Receitas simples e práticas para o seu dia a dia</h3>
-			<p class="section__subtitle">Sabemos que nem sempre é fácil manter uma dieta saudável e equilibrada no dia a dia corrido. Por isso, nossas receitas são simples, práticas e fáceis de preparar!</p>
-			<p>Mesmo que você não tenha muito tempo disponível para cozinhar, nosso ebook vai te ajudar a manter sua alimentação em dia e a não cair em tentações não saudáveis.</p>
-			<p>Além disso, as receitas são feitas com ingredientes simples e acessíveis, que você pode encontrar facilmente em qualquer supermercado.</p>
-			<a class="buy-button" href="https://app.monetizze.com.br/checkout/DVE210687">Adquirir receitas keto por apenas R$19,90</a>
-
-		</div>
-	</section>
-
-
-<div class="section__content center">
-  <h3 class="section__title">O que nossos clientes estão dizendo</h3>
-  <p class="section__subtitle">Veja o que nossos clientes estão falando sobre o nosso ebook de receitas keto:</p>
-  <div class="testimonials">
-    <div class="testimonial">
-      <div class="testimonial__image">
-        <img src="https://avatars.mds.yandex.net/i?id=b93e9116ff5ed2fae105066df0011198_l-5858040-images-thumbs&ref=rim&n=13&w=1014&h=1014" alt="Foto de perfil do cliente">
-      </div>
-      <div class="testimonial__content">
-        <p>As receitas são maravilhosas! Não imaginava que seria possível comer tão bem e ainda emagrecer. O ebook foi a melhor coisa que eu poderia ter comprado para a minha dieta.</p>
-        <p class="testimonial__author">Carla S., São Paulo</p>
-      </div>
-    </div>
-    <div class="testimonial">
-      <div class="testimonial__image">
-        <img src="https://randomuser.me/api/portraits/men/47.jpg" alt="Foto de perfil do cliente">
-      </div>
-      <div class="testimonial__content">
-        <p>Não sou muito fã de cozinhar, mas com essas receitas eu me sinto um verdadeiro chef! São simples e fáceis de seguir, e o resultado final é incrível. Já perdi 5kg em um mês!</p>
-        <p class="testimonial__author">Rafael P., Rio de Janeiro</p>
-      </div>
-    </div>
-    <div class="testimonial">
-      <div class="testimonial__image">
-        <img src="https://avatars.mds.yandex.net/i?id=45ba95e92b6afd326778223eeaab5370_l-5910950-images-thumbs&ref=rim&n=13&w=1080&h=1080" alt="Foto de perfil do cliente">
-      </div>
-      <div class="testimonial__content">
-        <p>Eu sempre tive dificuldade em manter uma dieta equilibrada, mas com essas receitas tudo ficou mais fácil. Além de serem deliciosas, elas me ajudaram a emagrecer de forma saudável e a me sentir muito melhor.</p>
-        <p class="testimonial__author">Juliana M., Belo Horizonte</p>
-      </div>
-    </div>
+  <div class="header">
+    <p id="geolocation-msg"></p>
   </div>
- <div class="guarantee">
-  <div class="">
-    <i class="fa fa-shield"></i>
-  </div>
-  <div class="guarantee__content">
-    <h3 class="guarantee__title">Garantia de Satisfação</h3>
-    <p class="guarantee__subtitle">Se por algum motivo você não estiver satisfeito com o nosso produto, entre em contato conosco em até 30 dias e nós lhe daremos um reembolso completo.</p>
-    <p>Não perca mais tempo e adquira agora mesmo o nosso ebook de receitas keto. Com um preço irresistível de apenas R$ 19,90, você não pode deixar essa oportunidade passar!</p>
+  <!-- Restante do conteúdo do site -->
 
-    </div>
-      
+  <!-- Inclua o link para o font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    /* Estilos para os ícones */
+    .flags {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      background-color: #f2f2f2;
+      border-bottom: 1px solid #ccc;
+    }
+    .flags li {
+      margin: 0 20px;
+      font-size: 20px;
+      color: #555;
+    }
+    .health-icon:before {
+      content: "\f21e";
+      font-family: "Font Awesome 5 Solid";
+    }
+  </style>
+</head>
+<body>
+  <ul class="flags">
+    <li><i class="fas fa-heart"></i></li>
+    <li><i class="fas fa-hospital"></i></li>
+    <li><i class="fas fa-leaf"></i></li>
+    <li><i class="fas fa-spa"></i></li>
+  </ul>
+  <!-- Conteúdo do site vem aqui -->
+</body>
+</html>
 
-    	
-    <a class="buy-button" href="https://app.monetizze.com.br/checkout/DVE210687">Adquirir receitas keto por apenas R$19,90</a>
+</body>
+</html>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/com.css">
+
+    <!-- Título da Página -->
+    <title>Dr Rosana</title>
+    
+    <style type="text/css">
+      header {
+        color: white;
+        background-image: url("assets/img/bg.jpg");
+        background-color: rgba(0, 0, 0, 0.6);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-blend-mode: darken;
+      }
+    </style>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '671840113939919');
+      fbq('init', '902207957134621');
+      fbq('init', '1060746161440914');
+      fbq('init', '649325786402999');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=671840113939919&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+  </head>
+  <body>
+    
+    <header class="py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <!-- Imagem Ultrasecreto -->
+
+           
+
+          <!-- Headline -->
+    <h1 class="headline my-4"><span class="red">O Poderoso Ritual "Estranho" </span>do Sul da Ásia</span>!</h1>
+
+            <!-- VSL -->
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID?modestbranding=1" frameborder="0" allowfullscreen></iframe>
 
 
-				</div>
-  
-                    </div>
+            <p style="text-align:center;">Assista o vídeo até o final, pois guardei o melhor para o final!!</p>
+
+
+            <!-- Botão 1 -->
+            <div id="cta1" class="mt-4 d-none">
+              <a href="https://pay.kiwify.com.br/3BcZ8cm" class="a-btn" style="text-decoration: none;">
+                <span class="span-btn">QUERO ME LIVRAR DAS MANCHAS!</span>
+              
+              </a>
+            </div>
+          
+            <style>
+
+
+
+  </style>
+</head>
+<div id="cta2" class="mt-4 d-none">
+<body>
+  <h1>Você vai aprender estratégias e segredos, como...</h1>
+  <p>Aprenda os seguintes tópicos:</p>
+  <ul class="checklist">
+    <li>Aprenda a preparar a mistura SECRETA com um ingrediente altamente específico que desativa a enzima tirosinase que produz o melasma!</li>
+    <li>Aprenda a técnica de drenagem caseira de 5 minutos descoberta no Sul da Ásia para ativar a renovação dérmica, e eliminar todos os pigmentos internos!</li>
+    <li>Aprenda os truques simples e naturais para eliminar acne e marcas de cicatriz do rosto!</li>
+    <li>Aprenda como preparar a pele para as etapas do procedimento 100% natural, para uma pele impecável!</li>
  
+  </ul>
+  <p>E muito, muito mais...</p>
+ 
+             
+       <section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+   
+                        <div class="d-flex align-items-center">
+                         
+                            <div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="background-image: url('https://exemplo.com/fundo.jpg'); background-size: cover; text-align: center; padding: 50px;">
+    <img src="https://codeva.com.br/wp-content/uploads/2020/06/garantia-de-7-dias-1-300x261.png" alt="Garantia de 7 dias" style="width: 150px; margin-bottom: 30px;">
+    <h4 style="color: #fff; font-size: 36px; margin-bottom: 20px;">Garantia de Satisfação</h4>
+    <p style="color: #fff; font-size: 20px; line-height: 1.5; max-width: 600px; margin: auto;">Estamos tão confiantes de que você vai amar o Protocolo Mulher Anti Melasma que oferecemos uma garantia de 7 dias para devolução do dinheiro. Se por qualquer motivo você não estiver satisfeita, basta nos enviar uma mensagem para o e-mail de suposte fornecido no seu e-mail de acesso, e dentro de 7 dias após a compra nós emitiremos um reembolso total. Sem perguntas, sem complicações.</p>
+    <div style="margin-top: 50px;">
+        <a href="https://pay.kiwify.com.br/3BcZ8cm" style="background-color: #dc3545; color: #fff; font-size: 24px; padding: 20px 40px; text-decoration: none; display: inline-block;">SIM! QUERO EXPERIMENTAR SEM RISCO POR 7 DIAS!</a>
+    </div>
 </div>
 
-				</div>
-			</div>
-			
-		</div>
-	</section>
+    <section class="bg-ltgray">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 text-center">
+                    <h3 class="lh-normal fs-40  mb-5">ACESSE TODOS OS MATERIAIS IMEDIATAMENTE</h3>
+                    <p class="fs-28"><strong> Como Acessar o Protocolo Mulher Anti Melasma</strong></p>
+                    <p>Quando você adquire o Protocolo Mulher Anti Melasma, você receberá todo o material diretamente no seu e-mail. Isso inclui todas as receitas SECRETAS, um guia passo a passo e outros bônus exclusivos.
 
-	<footer class="footer">
-		<div class="footer__content">
-			<p>&copy; 2023 Todos os direitos reservados.
+Além disso, você pode acessar todo o conteúdo do programa de qualquer aparelho
+com conexão à internet. Seja no seu computador, tablet ou smartphone, você
+poderá aprender e aplicar as receitas onde e quando quiser.</p> <p
+class="mb-0">E o melhor de tudo: o acesso ao Protocolo Mulher Anti Melasma é
+para sempre! Você poderá revisitar as receitas sempre que quiser, ou até
+mesmo compartilhar com suas amigas e familiares que também sofrem com o
+melasma.</p> </div> </div> </div> <section> <div class="container"> <div
+class="row mb-5"> <div class="col-12"> <h2 class="fs-40 text-center
+mb-0">Perguntas Frequentes</h2> </div> </div> <div class="row
+justify-content-center"> <div class="col-12 col-md-5 mb-5 mb-md-0"> <p
+class="fs-24 mb-3"><strong>O pagamento é único?</strong></p> <p
+class="mb-5">Sim, o pagamento é único e você tem acesso ao Protocolo Mulher
+Anti Melasmsa para sempre, você pode acessar quando e onde quiser.</p> <p
+class="fs-24 mb-3"><strong>Como funciona a garantia?</strong></p> <p
+class="mb-0">Quando você diz "sim" ao Protocolo Mulher Anti Melasma hoje,
+está fazendo isso 100% livre de riscos. Porque eu estou lhe dando uma garantia de 100% de satisfação
+para decidir se você está feliz com seus resultados ou não. Se em
+algum momento nos próximos dias você sentir que sua vida não melhorou
+drasticamente... basta enviar um e-mail para minha equipe de suporte e
+reembolsaremos 100% do seu investimento, sem burocracia. </p> </div> <div
+class="col-12 col-md-5"> <p class="fs-24 mb-3"><strong>Em quanto tempo devo
+esperar resultados?</strong></p> <p class="mb-0">Bem, cada pessoa é
+diferente, então a resposta não é a mesma para todos. Alguns experimentaram
+resultados visiveis logo nos primeiros dias. Outros levaram semanas para ver
+os resultados incriveis em sua pele . Eu recomendo usá-lo todos os dias
+durante um mês inteiro antes de ficar muito preocupado com isso.</p> </div>
+</div> </div><div style="margin-top: 50px;"> <a
+href="https://pay.kiwify.com.br/3BcZ8cm" style="background-color: #dc3545;
+color: #fff; font-size: 24px; padding: 20px 40px; text-decoration: none;
+display: inline-block;">QUERO UMA NOVA PELE SEM MANCHAS!</a>
+</section>
+
+    <section class="pb-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-10">
+                    <div class="disclaimer-wrap">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-7">
+                    <div class="alert alert-warning fs-14 px-3 px-md-4 py-2 py-md-3 mb-0">
+                        <strong>Nota:</strong> Este programa é 100% digital; você não receberá nenhum material físico. Você pode começar a usá-lo assim que quiser, sem ter que esperar dias para que o programa seja enviado para você.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+            </div>
+        </div>
+    </section>     </div>
+            <!-- Botão 2 -->
+            <div id="cta2" class="mt-4 d-none">
+              <a href="https://pay.kiwify.com.br/3BcZ8cm" class="a-btn" style="text-decoration: none;">
+                <span class="span-btn">SIM! QUERO UMA PELE SEM MANCHAS!</span>
+              
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark py-3 text-center">
+      <div class="text-white"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
+    </footer>
+
+
+
+    <script type="text/javascript">
+  setTimeout(() => {
+    document.getElementById("cta1").classList.remove("d-none"); 
+    document.getElementById("cta2").classList.remove("d-none");
+   
+  }, 1265000);
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./assets/js/com.js"></script>
+  </body>
+</html>
